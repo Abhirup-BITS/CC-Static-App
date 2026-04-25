@@ -2,73 +2,90 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Abhirup - Cloud Engineering Portfolio</title>
+    <title>Portfolio - Abhirup</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            background: #f9f9f9;
-            color: #333;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #f4f6f8;
+            color: #2c3e50;
         }
         header {
-            background: #222;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
+            background-color: #2c3e50;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: flex-end;
         }
-        nav a {
-            color: #fff;
-            margin: 0 15px;
+        header a {
+            color: #ecf0f1;
             text-decoration: none;
-            font-weight: bold;
+            margin-left: 25px;
+            font-weight: 500;
         }
-        .hero {
+        header a:hover {
+            color: #1abc9c;
+        }
+        .main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 90vh;
             text-align: center;
-            padding: 60px 20px;
         }
-        .hero h1 {
-            font-size: 2em;
+        .main h2 {
+            font-size: 1rem;
+            letter-spacing: 2px;
+            color: #1abc9c;
             margin-bottom: 10px;
         }
-        .hero p {
-            font-size: 1.2em;
-            margin-bottom: 20px;
+        .main h1 {
+            font-size: 2.5rem;
+            margin: 10px 0;
+        }
+        .main p {
+            max-width: 600px;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        .buttons {
+            display: flex;
+            gap: 20px;
         }
         .buttons a {
-            display: inline-block;
-            margin: 10px;
             padding: 12px 24px;
-            background: #0078d7;
-            color: #fff;
+            border: 2px solid #2c3e50;
+            border-radius: 6px;
             text-decoration: none;
-            border-radius: 4px;
-            font-weight: bold;
+            font-weight: 600;
+            color: #2c3e50;
+            transition: all 0.3s ease;
         }
         .buttons a:hover {
-            background: #005a9e;
+            background-color: #2c3e50;
+            color: #ecf0f1;
         }
     </style>
 </head>
 <body>
     <header>
-        <nav>
-            <a href="#stack">STACK</a>
-            <a href="#projects">PROJECTS</a>
-            <a href="#journey">JOURNEY</a>
-            <a href="#contact">CONTACT</a>
-        </nav>
+        <a href="#stack">STACK</a>
+        <a href="#projects">PROJECTS</a>
+        <a href="#journey">JOURNEY</a>
+        <a href="#contact">CONTACT</a>
     </header>
-
-    <section class="hero">
-        <p>OPEN TO CLOUD ENGINEERING ROLES · KOLKATA, IN</p>
+    <div class="main">
+        <h2>OPEN TO CLOUD ENGINEERING ROLES • BITS PILANI</h2>
         <h1>Abhirup</h1>
-        <p>Software Developer transitioning into Cloud Engineering.<br>
-           Building on Azure, containerising with Docker & Kubernetes,<br>
-           pursuing M.Tech Cloud Computing at BITS Pilani.</p>
+        <p>
+            Student currently doing CC Lab Assignment at BITS Pilani.  
+            Exploring cloud deployment, automation workflows, and neat HTML/CSS design.
+        </p>
         <div class="buttons">
             <a href="#projects">VIEW PROJECTS</a>
             <a href="#contact">GET IN TOUCH</a>
         </div>
-    </section>
+    </div>
 </body>
 </html>
