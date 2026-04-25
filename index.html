@@ -7,23 +7,33 @@
         body {
             margin: 0;
             font-family: 'Segoe UI', Arial, sans-serif;
-            background-color: #f4f6f8;
-            color: #2c3e50;
+            background: linear-gradient(135deg, #1abc9c, #3498db, #9b59b6);
+            background-size: 400% 400%;
+            animation: gradientShift 15s ease infinite;
+            color: #ecf0f1;
+        }
+        @keyframes gradientShift {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
         }
         header {
-            background-color: #2c3e50;
+            background-color: rgba(44, 62, 80, 0.85);
             padding: 15px 40px;
             display: flex;
             justify-content: flex-end;
+            position: sticky;
+            top: 0;
         }
         header a {
             color: #ecf0f1;
             text-decoration: none;
             margin-left: 25px;
             font-weight: 500;
+            transition: color 0.3s ease;
         }
         header a:hover {
-            color: #1abc9c;
+            color: #f1c40f;
         }
         .main {
             display: flex;
@@ -36,12 +46,14 @@
         .main h2 {
             font-size: 1rem;
             letter-spacing: 2px;
-            color: #1abc9c;
+            color: #f1c40f;
             margin-bottom: 10px;
+            text-transform: uppercase;
         }
         .main h1 {
-            font-size: 2.5rem;
+            font-size: 3rem;
             margin: 10px 0;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
         }
         .main p {
             max-width: 600px;
@@ -55,16 +67,18 @@
         }
         .buttons a {
             padding: 12px 24px;
-            border: 2px solid #2c3e50;
+            border: 2px solid #ecf0f1;
             border-radius: 6px;
             text-decoration: none;
             font-weight: 600;
-            color: #2c3e50;
+            color: #ecf0f1;
             transition: all 0.3s ease;
+            box-shadow: 0 0 10px rgba(241,196,15,0.6);
         }
         .buttons a:hover {
-            background-color: #2c3e50;
-            color: #ecf0f1;
+            background-color: #f1c40f;
+            color: #2c3e50;
+            box-shadow: 0 0 20px rgba(241,196,15,0.9);
         }
     </style>
 </head>
